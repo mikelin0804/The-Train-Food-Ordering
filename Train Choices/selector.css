@@ -1,0 +1,623 @@
+h1{
+    font-size: 300%;
+    text-align: center;
+    color:black;
+    padding-top: 100px;
+    margin-bottom: 0px;
+  }
+  div.address{
+      float:right;
+      display: block;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      padding-top: 10px;
+      padding-right: 10px;
+  }
+
+  #myModalJ {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  div.topnav{
+    text-align: center;
+    padding: 14px 0px;
+    font-size: 30px;
+    width: 100%;
+  }
+  div.ethnic {
+    text-align: center;
+  }
+  div.items {
+    background-color: #333;
+    overflow: auto;
+    display: none;
+    white-space: nowrap;
+  }
+
+  div.items a {
+    position: relative;
+    display: inline-block;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  div.items span {
+    position: relative;
+    display: inline-block;
+    padding: 14px 21px;
+    text-decoration: none;
+  }
+
+  div.items carText {
+      position: absolute;
+      text-align: left;
+    top: 30%;
+    left: 35%;
+    transform: translate(-40%, -50%);
+  }
+
+  div.items a:hover {
+    background-color: #777;
+  }
+
+  div.restaurant {
+    background-color: #333;
+    overflow: auto;
+    display:none;
+    white-space: nowrap;
+  }
+
+  div.restaurant a {
+    position: relative;
+    display: inline-block;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  div.restaurant span {
+    position: relative;
+    display: inline-block;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  div.restaurant carText {
+      position: absolute;
+      text-align: left;
+    top: 25%;
+    left: 35%;
+    transform: translate(-40%, -50%);
+  }
+
+  div.restaurant a:hover {
+    background-color: #777;
+  }
+
+  #modal-headerJ {
+	  padding: 2px 16px;
+	  background-color: #5cb85c;
+	  color: white;
+	}
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  #leftDoorR, #rightDoorR{
+  	font-size: 16px;
+  	padding: 2px;
+  	height: 470px;
+      width: 16.6%;
+   	float: left;
+  }
+
+  #middleR{
+  	height: 540px;
+      width: 66.6%;
+      float: left;
+  }
+
+  #logoR{
+  	display: block;
+  	margin-top: 2px;
+    	margin-left: auto;
+    	margin-right: auto;
+  	width: 180px;
+  	height: 140px;
+  	box-shadow: 4px 4px #888888;
+  }
+  .restInfoR{
+  	margin: 4px;
+  	margin-left: 8px;
+  }
+
+  #leftDoorR .menuR{
+  	margin-left: 4px;
+  	margin-top: 30px;
+  }
+
+  #leftDoorR button{
+  	width: 100%;
+  	font-size: 16px;
+  	color: black;
+  	padding: 6px 18px;
+  	display: block;
+  	background-color: #D3D3D3;
+  	border-radius: 8px;
+  	transition-duration: 0.4s;
+  }
+
+  #leftDoorR button:hover{
+  	background-color: #696969;
+  	color: white;
+  }
+
+  #leftDoorR button:focus{
+  	background-color: black;
+  	color: white;
+  	outline: none;
+  }
+
+  #orderLableR{
+  	text-align: center;
+  	text-decoration: underline;
+  	font-size: 26px;
+  }
+
+  #dishesR{
+  	padding:4px;
+  	float: left;
+  	margin: 4px;
+  	width: 790px;
+  	height: 460px;
+  	/* border: 2px solid green; */
+  	overflow: auto;
+  	display: flex;
+  	flex-wrap:nowrap;
+  }
+
+  #dishesR .item{
+  	margin: 2px;
+  	width: 200px;
+  	height: 430px;
+  	border: 1px solid grey;
+  	border-radius: 4px;
+  	display: inline-block;
+  	position: relative;
+  }
+
+
+  #containerR div{
+    margin: 0px;
+    max-width: 1200px;
+    max-height: 540px;
+    font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+  }
+  #modal-contentJ {
+	  position: relative;
+    background-image: url(images/back.png);
+    background-repeat: no-repeat;
+
+	  margin: auto;
+	  padding: 0;
+	  border: 6px solid #888;
+	  width: 1200px;
+	  height: 540px;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	  -webkit-animation-name: animatetop;
+	  -webkit-animation-duration: 0.4s;
+	  animation-name: animatetop;
+	  animation-duration: 0.4s
+	}
+  #RollMenu li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .foodPhoto{
+    width:120px;
+    height:120px
+
+  }
+
+  .modal {
+    display: none; 	/* Hidden by default */
+    position: fixed; 	/* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 6px solid #888;
+    width: 600px;
+    height: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+
+
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+  .option1{
+    position: absolute;
+    left:50px;
+    top: 300px;
+  }
+
+  .option2{
+    position: absolute;
+    left:50px;
+    top: 350px;
+  }
+
+  .option3{
+    position: absolute;
+    left:350px;
+    top: 300px;
+  }
+
+  .option4{
+    position: absolute;
+    left:350px;
+    top: 350px;
+  }
+
+  #OptionChosen{
+    position: absolute;
+  bottom: 100px;
+
+  }
+
+  #comment{
+  	position: absolute;
+  	height:200px;
+  	font-size:14pt;
+  	bottom: 60px;
+  	left: 350px;
+  }
+
+  #ok{
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+  }
+
+  #title{
+    font-size:28pt;
+    text-align: center;
+  }
+
+  #title2{
+    position: relative;
+    text-align: center;
+    font-size:18pt;
+  }
+
+  .buttonSel{
+  	margin: 2px;
+  	position:absolute;
+      bottom:0;
+  	right:0;
+  	width: 40px;
+  	height: 40px;
+  	font-size: 16px;
+  	color: black;
+  	padding: 6px;
+  	background-color: #D3D3D3;
+  	border-radius: 8px;
+  	transition-duration: 0.4s;
+  }
+
+  .buttonSel::before{
+  	text-align: center;
+  	font-size:  24px;
+  	content: "+";
+  }
+  #myModalC {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	#modal-contentC {
+	  position: relative;
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 0;
+	  border: 6px solid #888;
+	  width: 600px;
+	  height: 700px;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	  -webkit-animation-name: animatetop;
+	  -webkit-animation-duration: 0.4s;
+	  animation-name: animatetop;
+	  animation-duration: 0.4s
+	}
+
+	/* Add Animation */
+	@-webkit-keyframes animatetop {
+	  from {top:-300px; opacity:0}
+	  to {top:0; opacity:1}
+	}
+
+	@keyframes animatetop {
+	  from {top:-300px; opacity:0}
+	  to {top:0; opacity:1}
+	}
+
+	/* The Close Button */
+	#closeC {
+	  color: white;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
+
+	#closeC:hover,
+	#closeC:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	#modal-headerC {
+	  padding: 2px 16px;
+	  background-color: #5cb85c;
+	  color: white;
+	}
+
+	#modal-bodyC {padding: 2px 16px;}
+
+	.modal-footer {
+	  padding: 2px 16px;
+	  background-color: #5cb85c;
+	  color: white;
+	}
+
+	#ccn {
+	  position: absolute;
+	  width: 300px;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  font-size: 16px;
+	  background-color: white;
+	  background-position: 10px 10px;
+	  background-repeat: no-repeat;
+	  padding: 12px 20px 12px 40px;
+	  transition: width 0.4s ease-in-out;
+	  left:70px;
+	  top: 180px;
+	}
+	#cvv {
+	  position: absolute;
+
+	  width: 100px;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  font-size: 16px;
+	  background-color: white;
+	  background-image: url("images/cvv.png");
+	  background-position: 10px 10px;
+	  background-repeat: no-repeat;
+	  padding: 12px 20px 12px 40px;
+	  transition: width 0.4s ease-in-out;
+	  left:70px;
+	  top: 280px;
+	}
+	#zip {
+	  position: absolute;
+
+	  width: 200px;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  font-size: 16px;
+	  background-color: white;
+	  background-image: url("images/credit-card.png");
+	  background-position: 10px 10px;
+	  background-repeat: no-repeat;
+	  padding: 12px 20px 12px 40px;
+	  transition: width 0.4s ease-in-out;
+	  left:300px;
+	  top: 380px;
+	}
+	#ex {
+	  position: absolute;
+	  width: 200px;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  font-size: 10px;
+	  background-color: white;
+	  background-image: url('searchicon.png');
+	  background-position: 10px 10px;
+	  background-repeat: no-repeat;
+	  padding: 12px 20px 12px 40px;
+	  transition: width 0.4s ease-in-out;
+	  left:70px;
+	  top: 380px;
+	}
+	#ccn:focus {
+	  width: 80%;
+	}
+
+	#cd {
+	  position: absolute;
+	  left:70px;
+	  top: 140px;
+
+	}
+	#cv {
+	  position: absolute;
+	  left:70px;
+	  top: 240px;
+
+	}
+	#title{
+	  position: absolute;
+	  left:220px;
+	  top: 80px;
+	  font-size: 25px;
+
+	}
+	#title2{
+	  position: absolute;
+	  left:260px;
+	  top: 120px;
+	  font-size: 25px;
+
+	}
+	#exp{
+	  position: absolute;
+	  left:70px;
+	  top: 340px;
+
+	}
+	#z{
+	  position: absolute;
+	  left:300px;
+	  top: 340px;
+
+	}
+
+	#vC{
+	  position: absolute;
+	  left:10px;
+	  top: 280px;
+
+	}
+
+
+	#ccV{
+	  position: absolute;
+	  left:10px;
+	  top: 180px;
+
+	}
+
+
+	#back{
+  position: absolute;
+	left:100px;
+	top: 580px; background-color: #25B3BC;
+	}
+
+	#pay{
+	  position: absolute;
+	  left:400px;
+	  top: 580px;
+
+	}
+  .cancelBtn{
+  	float: right;
+  	margin-right: 10px;
+  	width: 20px;
+  	height: 20px;
+  	font-size: 10px;
+  	color: black;
+  	background-color: #D3D3D3;
+  	border-radius: 4px;
+  	transition-duration: 0.4s;
+  	text-align: center;
+  	vertical-align: middle;
+  	font-weight: bold;
+  }
+  .cancelBtn::before{
+  	content: "X";
+  }
+
+  .cancelBtn:hover{
+  	background-color: #696969;
+  	color: white;
+  }
+
+  .cancelBtn:focus{
+  	background-color: black;
+  	color: white;
+  	outline: none;
+  }

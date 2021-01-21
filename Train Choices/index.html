@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<div id="homepage">
+
+  <body>
+    <title>FoodStation</title>
+
+    <div class="topnavbar">
+      <a class="active" href="">Home</a>
+    </div>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Homepage.css">
+
+
+    <h1>FoodStation</h1>
+
+
+    <div class="container">
+
+      <button type="submit" class="mapBtn"><i class="fa fa-map-marker"></i></button>
+      <input type="text" class="addressContainer" maxlength="50" placeholder="Enter your address here" required>
+
+      <button type="submit" class="enterBtn" onclick="clickToJump()"><i class="fa fa-arrow-circle-right"></i></button>
+
+    </div>
+
+
+    <button class="button" onclick="openFirstPopupWindow()">Register</button>
+    <div class="popUp" id="window1">
+      <form class="popUpContainer">
+        <p><b>Register</b></p>
+
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" width="30px" style="margin-top:-10px"></br>
+        </br><label for="EoP"><b>Email or Phone Number</b></label>
+        <input type="text" placeholder="Enter your Email or phone number here" required></br></br>
+
+        <label for="password"><b>Password</b></label></br>
+        <input type="password" placeholder="Set your Password here" id="inputPassword" required></br>
+        <input type="checkbox" onclick="showPassword()">Show Password
+
+        <input type="checkbox" class="rembStyle"> Remember me</br></br>
+        <input type="checkbox">
+        <h7>Agree to our Terms & Privacy?</h7></br>
+
+        <button type="button" class="RoLbutton" onclick="closeFirstPopupWindow()">Close</button>
+        <button type="submit" class="RoLbutton">Register</button>
+      </form>
+    </div>
+
+
+    <button class="button" onclick="openSecondPopupWindow()">Login</button>
+    <div class="popUp" id="window2">
+      <form class="popUpContainer">
+        <p><b>Log In</b></p>
+
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+          width="40px"></br></br>
+        <label for="EoP"><b>Email or Phone Number</b></label>
+        <input type="text" placeholder="Enter Email or phone number here" required></br></br>
+
+        <label for="password"><b>Password</b></label></br>
+        <input type="password" placeholder="Enter your Password here" id="inputPassword" required></br>
+        <input type="checkbox" onclick="showPassword()">Show Password
+
+        <input type="checkbox" class="rembStyle"> Remember me</br></br>
+
+        <button type="button" class="RoLbutton" onclick="closeSecondPopupWindow()">Close</button>
+        <button type="submit" class="RoLbutton">Login</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="Homepage.js"></script>
+    </form>
+
+  </body>
+</div>
+
+<div id="selector" style="display:none">
+    <body>
+        <link rel="stylesheet" href="selector.css">
+        <div class="topnavbar">
+            <a onclick="clickToJump2()">Home</a>
+            
+            <div class="address">
+                User Address Here
+              </div>
+
+          </div>
+
+        <h1>FoodStation</h1>
+        <br\>
+
+        <form>
+          <div class="topnav">
+            <a class="active" href="#Search">Search</a>
+            <input type="test" placeholder ="What would you like to eat?" >
+          </div>
+        </form>
+        <div class="ethnic">
+          <a href="#random" onclick="Random()"><span class="dot"></span>
+            <img src="images/random.png" alt="random" width="200">
+          </a>
+          <a href="#american" onclick="American()">
+          <img src="images/american.png" alt="american" width="200">
+          </a>
+          <a href="#vegetarian" onclick="Vegetarian()">
+          <img src="images/vegetarian.png" alt="vegetarian" width="200">
+          </a>
+          <br>
+          <a href="#japanese" onclick="Japanese()">
+          <img src="images/japanese.png" alt="japanese" width="200">
+          </a>
+          <a href="#mexican" onclick="Mexican()">
+          <img src="images/mexican.png" alt="mexican" width="200">
+          </a>
+          <span href="#more">
+          <img src="images/more.png" alt="more" width="200">
+          </span>
+        </div>
+
+        <div class="items" id="random">
+          <span><img src="Train.png" alt="Car"></span>
+          <car id="sushi"><a><img src="Car.png" alt="Car"><carText>Sushi</carText></a></car>
+          <car id="teriyaki"><a><img src="Car.png" alt="Car"><carText>Teriyaki</carText></a></car>
+          <car id="ramen"><a><img src="Car.png" alt="Car"><carText>Ramen</carText></a></car>
+          <car id="tonkotsu"><a><img src="Car.png" alt="Car"><carText>Tonkotsu</carText></a></car>
+          <car id="sashimi"><a><img src="Car.png" alt="Car"><carText>Sashimi</carText></a></car>
+          <car id="curry"><a><img src="Car.png" alt="Car"><carText>Curry</carText></a></car>
+        </div>
+        <div id="sushi1" class="restaurant">
+            <a href="#sushi+sushi1" onclick="Sushi1Transition()"><img src="Car2.jpg" alt="Car"><carText>Sushi 1</carText></a>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sushi 2<br>distance a</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sushi 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="teriyaki1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="ramen1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="tonkotsu1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="sashimi1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="curry1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+
+        <div class="items" id="american">
+          <span><img src="Train.png" alt="Car"></span>
+          <car id="sushi"><a><img src="Car.png" alt="Car"><carText>Sushi</carText></a></car>
+          <car id="teriyaki"><a><img src="Car.png" alt="Car"><carText>Teriyaki</carText></a></car>
+          <car id="ramen"><a><img src="Car.png" alt="Car"><carText>Ramen</carText></a></car>
+          <car id="tonkotsu"><a><img src="Car.png" alt="Car"><carText>Tonkotsu</carText></a></car>
+          <car id="sashimi"><a><img src="Car.png" alt="Car"><carText>Sashimi</carText></a></car>
+          <car id="curry"><a><img src="Car.png" alt="Car"><carText>Curry</carText></a></car>
+        </div>
+        <div id="sushi1" class="restaurant">
+            <a href="#sushi+sushi1"><img src="Car2.jpg" alt="Car"><carText>Sushi 1</carText></a>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sushi 2<br>distance a</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sushi 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="teriyaki1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="ramen1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="tonkotsu1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="sashimi1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="curry1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+
+        <div class="items" id="vegetarian">
+          <span><img src="Train.png" alt="Car"></span>
+          <car id="sushi"><a><img src="Car.png" alt="Car"><carText>Sushi</carText></a></car>
+          <car id="teriyaki"><a><img src="Car.png" alt="Car"><carText>Teriyaki</carText></a></car>
+          <car id="ramen"><a><img src="Car.png" alt="Car"><carText>Ramen</carText></a></car>
+          <car id="tonkotsu"><a><img src="Car.png" alt="Car"><carText>Tonkotsu</carText></a></car>
+          <car id="sashimi"><a><img src="Car.png" alt="Car"><carText>Sashimi</carText></a></car>
+          <car id="curry"><a><img src="Car.png" alt="Car"><carText>Curry</carText></a></car>
+        </div>
+        <div id="sushi1" class="restaurant">
+            <a href="#sushi+sushi1"><img src="Car2.jpg" alt="Car"><carText>Sushi 1</carText></a>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sushi 2<br>distance a</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sushi 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="teriyaki1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="ramen1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="tonkotsu1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="sashimi1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="curry1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+
+        <div class="items" id="japanese">
+          <span><img src="Train.png" alt="Car"></span>
+          <car id="sushi"><a><img src="Car.png" alt="Car"><carText>Sushi</carText></a></car>
+          <car id="teriyaki"><a><img src="Car.png" alt="Car"><carText>Teriyaki</carText></a></car>
+          <car id="ramen"><a><img src="Car.png" alt="Car"><carText>Ramen</carText></a></car>
+          <car id="tonkotsu"><a><img src="Car.png" alt="Car"><carText>Tonkotsu</carText></a></car>
+          <car id="sashimi"><a><img src="Car.png" alt="Car"><carText>Sashimi</carText></a></car>
+          <car id="curry"><a><img src="Car.png" alt="Car"><carText>Curry</carText></a></car>
+        </div>
+        <div id="sushi1" class="restaurant">
+            <a href="#sushi+sushi1"><img src="Car2.jpg" alt="Car"><carText>Sushi 1</carText></a>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sushi 2<br>distance a</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sushi 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="teriyaki1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="ramen1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="tonkotsu1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="sashimi1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="curry1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+
+        <div class="items" id="mexican">
+          <span><img src="Train.png" alt="Car"></span>
+          <car id="sushi"><a><img src="Car.png" alt="Car"><carText>Sushi</carText></a></car>
+          <car id="teriyaki"><a><img src="Car.png" alt="Car"><carText>Teriyaki</carText></a></car>
+          <car id="ramen"><a><img src="Car.png" alt="Car"><carText>Ramen</carText></a></car>
+          <car id="tonkotsu"><a><img src="Car.png" alt="Car"><carText>Tonkotsu</carText></a></car>
+          <car id="sashimi"><a><img src="Car.png" alt="Car"><carText>Sashimi</carText></a></car>
+          <car id="curry"><a><img src="Car.png" alt="Car"><carText>Curry</carText></a></car>
+        </div>
+        <div id="sushi1" class="restaurant">
+            <a href="#sushi+sushi1"><img src="Car2.jpg" alt="Car"><carText>Sushi 1</carText></a>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sushi 2<br>distance a</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sushi 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="teriyaki1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Teriyaki 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="ramen1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Ramen 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="tonkotsu1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Tonkotsu 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="sashimi1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Sashimi 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+        <div id="curry1" class="restaurant">
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 1</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 2</carText></span>
+            <span><img src="Car2.jpg" alt="Car"><carText>Curry 3</carText></span>
+            <span><img src="Train2.png" alt="Car"></span>
+        </div>
+
+
+
+
+</div>
+
+
+
+
+<div class="modal" id="myModalJ">
+
+  <!-- Modal content -->
+
+  <div class="modal-content" id = "modal-contentJ">
+
+    <div class="modal-header" id = "modal-headerJ">
+      <span class="close" id ="closeJ">&times;</span>
+      <h2>Restaurant</h2>
+    </div>
+
+      <div class="container" id="containerR">
+    		<div class="leftDoor" id="leftDoorR">
+    			<img src="images/logo.png" class="logo" id="logoR" alt="restaurant logo">
+    			<br>
+
+    			<p class="restInfoR"  id="restName">Super Sushi</p>
+    			<p class="restInfoR" id="restDist">3 km away</p>
+    			<p class="restInfoR" id="restDelivery">Delivery: $5</p>
+
+    			<div class="menuR">
+            <button id="btnTab1">Rolls</button>
+      				<button id="btnTab2">Soups</button>
+      				<button id="btnTab3">Sashimi</button>
+      				<button id="btnTab4">Drinks</button>
+    			</div>
+
+    		</div>
+    		<div class="middle" id=middleR>
+    			<div class="dishes" id="dishesR">
+
+
+          </div><!-- XXX:  -->
+    		</div>
+    		<div class="rightDoor" id ="rightDoorR">
+    			<div class="orderLable" id ="orderLableR">
+    				<p>Your Order</p>
+    				<ul id="SelectedCustom"></ul>
+    			</div>
+    			<ul class="itemsO"></ul>
+    			<div class="money">
+    				<p></p>
+    			</div>
+    		</div>
+
+    		<button type="button" class="Confirm" > Confirm Order! </button>
+        <button id="myBtnC">PAY! </button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" id=closeCc>&times;</span>
+      <h2>Food Customization Page</h2>
+    </div>
+    <div class="modal-body">
+      <p id = "title">Food Name</p>
+      <p id = "title2">xxxx</p>
+
+      <div class = "option1">
+      <input type="checkbox" id="option1"  name = option1 value="65">
+      <label for="option1"> Option 1 (+ 65 CAD)</label><br>
+    </div>
+    <div class = "option2">
+
+      <input type="checkbox" id="option2" name = option2 value="30">
+      <label for="option 2"> Option 2 (+ 30 CAD)</label><br>
+    </div>
+    <div class = "option3">
+  <input type="checkbox" id="option3" name = option3 value="21">
+      <label for="option 3"> Option 3 (+ 21 CAD)</label><br>
+    </div>
+    <div class = "option4">
+  <input type="checkbox" id="option4" name = option4 value="32">
+      <label for="option 4"> Option 4 (+ 32 CAD)</label><br>
+    </div>
+
+    <form action="/action_page.php">
+    <input type="text" id="comment" name="comment" placeholder="Extra Information"><br><br>
+  </form>
+    </div>
+
+
+        <!-- container for displaying selected seats -->
+        <ul id="OptionChosen"></ul>
+
+        <div id = "ok">
+          Total(included options):$<span id="seats-total">  </span> CAD
+          <input type="submit" class="con" value="Confirm!">
+        </div>
+      </form>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="modal" id="myModalC">
+
+	  <!-- Modal content -->
+	  <div class="modal-content" id = "modal-contentC">
+	    <div class="modal-header" id = "modal-headerC">
+	      <span class="close" id ="closeC">&times;</span>
+	      <h2>Payment</h2>
+	    </div>
+	    <div class="modal-body" id= "modal-bodyC" >
+	      <p id = "title">Add New Card</p>
+	      <p id = "cd"> Card Details </p>
+
+        <form name="myForm"  onsubmit="return validateForm()" method="post" required>
+	      <img class="cc" id = "ccV"src="images/credit-card.png" alt="cc" style="width:50px;height:50px;">
+	      <input type ="input" name=creditCardNum id="ccn" placeholder="0000 0000 0000 0000">
+	      <p id = "cv" > CVV </p>
+	      <img class="v" id="vC" src="images/cvv.png" alt="cc"  style="width:50px;height:50px;">
+	      <input type="input"id="cvv" name=ccvNum placeholder="000">
+	      <p id = "exp"> Expiration </p>
+	      <input type="month"id="ex" name=dateNum placeholder="MM/YY">
+	      <p id = "z"> Zip Code </p>
+	      <input type="input"id="zip" name=zipNum placeholder="R3T 1X9" >
+	      <button class="button" id = "back">Back</button>
+	      <button class="button" id = "pay">Pay</button>
+      </form>
+
+	    </div>
+
+	  </div>
+
+	</div>
+
+
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="selector.js"></script>
+<script type="text/javascript" src="homepage.js"></script>
